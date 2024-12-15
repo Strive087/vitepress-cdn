@@ -19,7 +19,7 @@ import type { MarkdownOptions, ThemeOptions } from '../markdown'
 const require = createRequire(import.meta.url)
 
 const resolveLangSync = createSyncFn<ShikiResolveLang>(
-  require.resolve('vitepress/dist/node/worker_shikiResolveLang.js')
+  require.resolve('vitepress-cdn/dist/node/worker_shikiResolveLang.js')
 )
 const nanoid = customAlphabet('abcdefghijklmnopqrstuvwxyz', 10)
 

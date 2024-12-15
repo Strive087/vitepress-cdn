@@ -46,7 +46,7 @@ export function pathToFile(path: string) {
     // the path conversion scheme.
     // /foo/bar.html -> ./foo_bar.md
     if (inBrowser) {
-      const base = import.meta.env.BASE_URL
+      const base = __BASE_URL__
       pagePath =
         sanitizeFileName(
           pagePath.slice(base.length).replace(/\//g, '_') || 'index'
@@ -61,7 +61,7 @@ export function pathToFile(path: string) {
         pageHash = __VP_HASH_MAP__[pagePath.toLowerCase()]
       }
       if (!pageHash) return null
-      pagePath = `${base}${__ASSETS_DIR__}/${pagePath}.${pageHash}.js`
+      pagePath = `${import.meta.env.BASE_URL}${__ASSETS_DIR__}/${pagePath}.${pageHash}.js`
     } else {
       // ssr build uses much simpler name mapping
       pagePath = `./${sanitizeFileName(

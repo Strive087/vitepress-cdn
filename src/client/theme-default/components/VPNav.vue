@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { inBrowser } from 'vitepress'
+import { inBrowser } from 'vitepress-cdn'
 import { computed, provide, watchEffect } from 'vue'
 import { useData } from '../composables/data'
 import { useNav } from '../composables/nav'

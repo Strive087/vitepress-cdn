@@ -1,5 +1,5 @@
 import { useMediaQuery } from '@vueuse/core'
-import type { DefaultTheme } from 'vitepress/theme'
+import type { DefaultTheme } from 'vitepress-cdn/theme'
 import {
   computed,
   onMounted,

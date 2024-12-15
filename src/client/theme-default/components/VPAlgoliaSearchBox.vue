@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import docsearch from '@docsearch/js'
-import { useRoute, useRouter } from 'vitepress'
-import type { DefaultTheme } from 'vitepress/theme'
+import { useRoute, useRouter } from 'vitepress-cdn'
+import type { DefaultTheme } from 'vitepress-cdn/theme'
 import { nextTick, onMounted, watch } from 'vue'
 import { useData } from '../composables/data'
 

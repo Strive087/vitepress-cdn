@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { DefaultTheme } from 'vitepress/theme'
+import type { DefaultTheme } from 'vitepress-cdn/theme'
 import { useData } from '../composables/data'
 import { isActive } from '../../shared'
 import VPLink from './VPLink.vue'

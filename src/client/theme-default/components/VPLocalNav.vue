@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useWindowScroll } from '@vueuse/core'
-import { onContentUpdated } from 'vitepress'
+import { onContentUpdated } from 'vitepress-cdn'
 import { computed, onMounted, ref } from 'vue'
 import { useData } from '../composables/data'
 import { useLocalNav } from '../composables/local-nav'

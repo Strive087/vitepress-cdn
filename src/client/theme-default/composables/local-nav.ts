@@ -1,5 +1,5 @@
-import { onContentUpdated } from 'vitepress'
-import type { DefaultTheme } from 'vitepress/theme'
+import { onContentUpdated } from 'vitepress-cdn'
+import type { DefaultTheme } from 'vitepress-cdn/theme'
 import { computed, shallowRef } from 'vue'
 import { getHeaders, type MenuItem } from '../composables/outline'
 import { useData } from './data'

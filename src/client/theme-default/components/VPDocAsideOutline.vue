@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onContentUpdated } from 'vitepress'
+import { onContentUpdated } from 'vitepress-cdn'
 import { ref, shallowRef } from 'vue'
 import { useData } from '../composables/data'
 import {

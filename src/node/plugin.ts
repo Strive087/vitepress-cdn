@@ -153,16 +153,17 @@ export async function createVitePressPlugin(
             !!site.themeConfig?.algolia, // legacy
           __CARBON__: !!site.themeConfig?.carbonAds,
           __ASSETS_DIR__: JSON.stringify(siteConfig.assetsDir),
-          __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: !!process.env.DEBUG
+          __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: !!process.env.DEBUG,
+          __BASE_URL__: JSON.stringify(siteData.base)
         },
         optimizeDeps: {
           // force include vue to avoid duplicated copies when linked + optimized
           include: [
             'vue',
-            'vitepress > @vue/devtools-api',
-            'vitepress > @vueuse/core'
+            'vitepress-cdn > @vue/devtools-api',
+            'vitepress-cdn > @vueuse/core'
           ],
-          exclude: ['@docsearch/js', 'vitepress']
+          exclude: ['@docsearch/js', 'vitepress-cdn']
         },
         server: {
           fs: {

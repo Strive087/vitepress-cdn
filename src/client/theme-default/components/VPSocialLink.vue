@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { DefaultTheme } from 'vitepress/theme'
+import type { DefaultTheme } from 'vitepress-cdn/theme'
 import { computed, nextTick, onMounted, ref, useSSRContext } from 'vue'
 import type { SSGContext } from '../../shared'
 

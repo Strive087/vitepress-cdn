@@ -12,7 +12,7 @@ import {
 import { useFocusTrap } from '@vueuse/integrations/useFocusTrap'
 import Mark from 'mark.js/src/vanilla.js'
 import MiniSearch, { type SearchResult } from 'minisearch'
-import { dataSymbol, inBrowser, useRouter } from 'vitepress'
+import { dataSymbol, inBrowser, useRouter } from 'vitepress-cdn'
 import {
   computed,
   createApp,

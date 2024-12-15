@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
-import { useRoute } from 'vitepress'
+import { useRoute } from 'vitepress-cdn'
 
 const route = useRoute()
 const backToTop = ref()

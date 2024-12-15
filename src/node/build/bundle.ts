@@ -72,7 +72,7 @@ export async function bundle(
   ): Promise<ViteInlineConfig> => ({
     root: config.srcDir,
     cacheDir: config.cacheDir,
-    base: config.site.base,
+    base: config.site.assetsBase || config.site.base,
     logLevel: config.vite?.logLevel ?? 'warn',
     plugins: await createVitePressPlugin(
       config,
@@ -81,7 +81,7 @@ export async function bundle(
       clientJSMap
     ),
     ssr: {
-      noExternal: ['vitepress', '@docsearch/css']
+      noExternal: ['vitepress-cdn', '@docsearch/css']
     },
     build: {
       ...options,

@@ -1,5 +1,5 @@
-import { getScrollOffset } from 'vitepress'
-import type { DefaultTheme } from 'vitepress/theme'
+import { getScrollOffset } from 'vitepress-cdn'
+import type { DefaultTheme } from 'vitepress-cdn/theme'
 import { onMounted, onUnmounted, onUpdated, type Ref } from 'vue'
 import type { Header } from '../../shared'
 import { throttleAndDebounce } from '../support/utils'

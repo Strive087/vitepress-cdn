@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useScrollLock } from '@vueuse/core'
-import { inBrowser } from 'vitepress'
+import { inBrowser } from 'vitepress-cdn'
 import { ref } from 'vue'
 import VPNavScreenAppearance from './VPNavScreenAppearance.vue'
 import VPNavScreenMenu from './VPNavScreenMenu.vue'

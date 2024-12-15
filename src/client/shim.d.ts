@@ -4,6 +4,7 @@ declare const __ALGOLIA__: boolean
 declare const __CARBON__: boolean
 declare const __VUE_PROD_DEVTOOLS__: boolean
 declare const __ASSETS_DIR__: string
+declare const __BASE_URL__: string
 
 declare module '*.vue' {
   import type { DefineComponent } from 'vue'
@@ -12,13 +13,13 @@ declare module '*.vue' {
 }
 
 declare module '@siteData' {
-  import type { SiteData } from 'vitepress'
+  import type { SiteData } from 'vitepress-cdn'
   const data: SiteData
   export default data
 }
 
 declare module '@theme/index' {
-  import type { Theme } from 'vitepress'
+  import type { Theme } from 'vitepress-cdn'
   const theme: Theme
   export default theme
 }

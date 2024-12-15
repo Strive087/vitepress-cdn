@@ -8,7 +8,7 @@ import './styles/components/vp-code-group.css'
 import './styles/components/vp-doc.css'
 import './styles/components/vp-sponsor.css'
 
-import type { Theme } from 'vitepress'
+import type { Theme } from 'vitepress-cdn'
 import VPBadge from './components/VPBadge.vue'
 import Layout from './Layout.vue'
 

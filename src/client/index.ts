@@ -1,5 +1,5 @@
-// exports in this file are exposed to themes and md files via 'vitepress'
-// so the user can do `import { useRoute, useData } from 'vitepress'`
+// exports in this file are exposed to themes and md files via 'vitepress-cdn'
+// so the user can do `import { useRoute, useData } from 'vitepress-cdn'`
 
 // generic types
 export type { VitePressData } from './app/data'

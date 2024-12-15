@@ -77,7 +77,11 @@ export async function build(
         .filter(
           (chunk) => chunk.type === 'asset' && !chunk.fileName.endsWith('.css')
         )
-        .map((asset) => siteConfig.site.base + asset.fileName)
+        .map(
+          (asset) =>
+            (siteConfig.site.assetsBase || siteConfig.site.base) +
+            asset.fileName
+        )
 
       // default theme special handling: inject font preload
       // custom themes will need to use `transformHead` to inject this
@@ -217,7 +221,9 @@ function generateMetadataScript(
   )
 
   const resolvedMetadataFile = path.join(config.outDir, metadataFile)
-  const metadataFileURL = slash(`${config.site.base}${metadataFile}`)
+  const metadataFileURL = slash(
+    `${config.site.assetsBase || config.site.base}${metadataFile}`
+  )
 
   fs.ensureDirSync(path.dirname(resolvedMetadataFile))
   fs.writeFileSync(resolvedMetadataFile, metadataContent)

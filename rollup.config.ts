@@ -65,7 +65,7 @@ const esmBuild: RollupOptions = {
 
 const typesExternal = [
   ...external,
-  /\/vitepress\/(?!(dist|node_modules)\/).*\.d\.ts$/,
+  /\/vitepress-cdn\/(?!(dist|node_modules)\/).*\.d\.ts$/,
   'source-map-js',
   'fast-glob'
 ]

@@ -7,6 +7,8 @@ import { search as koSearch } from './ko'
 
 export const shared = defineConfig({
   title: 'VitePress',
+  base: '/quantapi-web/docs/',
+  assetsBase: 'http://localhost:5500/docs/.vitepress/dist/',
 
   rewrites: {
     'en/:rest*': ':rest*'

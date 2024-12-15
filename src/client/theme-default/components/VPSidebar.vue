@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useScrollLock } from '@vueuse/core'
-import { inBrowser } from 'vitepress'
+import { inBrowser } from 'vitepress-cdn'
 import { ref, watch } from 'vue'
 import { useSidebar } from '../composables/sidebar'
 import VPSidebarGroup from './VPSidebarGroup.vue'

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { DefaultTheme } from 'vitepress/theme'
+import type { DefaultTheme } from 'vitepress-cdn/theme'
 import { computed } from 'vue'
 import { useSidebarControl } from '../composables/sidebar'
 import VPLink from './VPLink.vue'

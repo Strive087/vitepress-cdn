@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { withBase } from 'vitepress'
+import { withBase } from 'vitepress-cdn'
 import { useData } from './composables/data'
 import { useLangs } from './composables/langs'
 

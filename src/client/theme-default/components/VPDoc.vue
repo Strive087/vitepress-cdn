@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useRoute } from 'vitepress'
+import { useRoute } from 'vitepress-cdn'
 import { computed } from 'vue'
 import { useData } from '../composables/data'
 import { useSidebar } from '../composables/sidebar'

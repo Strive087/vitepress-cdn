@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { DefaultTheme } from 'vitepress/theme'
+import type { DefaultTheme } from 'vitepress-cdn/theme'
 import { ref, watch, onMounted } from 'vue'
 import { useAside } from '../composables/aside'
 import { useData } from '../composables/data'
