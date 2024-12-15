@@ -1,3 +1,21 @@
+# [1.5.0-alpha.0](https://github.com/vuejs/vitepress/compare/v1.5.0...v1.5.0-alpha.0) (2024-12-15)
+
+### Features
+
+- **experimental:** support cdn url can be configured ([1bdad9d](https://github.com/vuejs/vitepress/commit/1bdad9db44b5a3cc95a866cd0f3a11fea5664476))
+
+# [1.5.0-beta.1](https://github.com/vuejs/vitepress/compare/v1.5.0...v1.5.0-beta.1) (2024-12-15)
+
+### Features
+
+- **experimental:** support cdn url can be configured ([1bdad9d](https://github.com/vuejs/vitepress/commit/1bdad9db44b5a3cc95a866cd0f3a11fea5664476))
+
+# [1.5.0-beta.1](https://github.com/vuejs/vitepress/compare/v1.5.0...v1.5.0-beta.1) (2024-12-15)
+
+### Features
+
+- **experimental:** support cdn url can be configured ([1bdad9d](https://github.com/vuejs/vitepress/commit/1bdad9db44b5a3cc95a866cd0f3a11fea5664476))
+
 # [1.5.0](https://github.com/vuejs/vitepress/compare/v1.4.5...v1.5.0) (2024-11-04)
 
 ### Features
